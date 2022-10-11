@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+:root{
+
+    /*Breakpoints*/
+
+    --mobile: 375px;
+    --desktop: 1440px;
+
+    /*Color*/
+
+    --text-color: hsl(0, 0%, 8%);
+    --button-text-color: hsl(0, 0%, 41%);
+    --background-color: hsl(0, 0%, 98%);
+
+    /*Typography*/
+
+    --text-size: 18px;
+    --font-family:  'Epilogue', sans-serif;
+
+}
+
+    /* Reset */
+html *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    opacity: 0;
+}
+
+.nav_list{
+    display: flex;
+    width: 47%;
+    padding-top: 50px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.features_list{
+    display: flex;
+    flex-direction: column;
+}
+
+.features_item{
+    display: inline-block;
+}
+
+.image_logo{
+    padding: 30px 0 0 42px;
+    height: 56px;
+    width: 125px;
+}
+
+li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.container{
+    width: var(--desktop);
+    margin: 0 auto;
+    height: 100vh;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.information{
+    width: 50%;
+    padding-left: 10.4rem;
+    padding-top: 8rem;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+.product_description{
+    font-family: var(--font-family);
+    font-size: var(--text-size);
+    margin-top: 3.2rem;
+    padding-right: 5rem;
+    padding-left: 0.0rem;
+    line-height: 1.8rem;
+}
+
+.button{
+    margin-top: 3rem;
+    border-radius: 15px;
+    padding: 17px 26px;
+    font-size: var(--text-size);
+    font-weight: 700;
+    font-family: var(--font-family);
+}
+
+.hero{
+    background-image: url(./images/image-hero-desktop.png);
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 73vh;
+    margin-top: 1.8rem;
+    margin-right: 1rem;
+}
+
+.companies{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
