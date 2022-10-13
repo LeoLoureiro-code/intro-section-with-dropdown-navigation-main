@@ -103,10 +103,22 @@ h1{
 .button{
     margin-top: 3rem;
     border-radius: 15px;
-    padding: 17px 26px;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    padding: 18px 27px;
     font-size: var(--text-size);
     font-weight: 700;
     font-family: var(--font-family);
+    outline: none;
+    border: 1px solid var(--text-color); 
+    transition: all 0.5s;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: var(--background-color);
+    color: var(--text-color); 
+    
 }
 
 .hero{
@@ -121,8 +133,15 @@ h1{
 }
 
 .companies{
+    width: 100%;
+    padding-right: 4rem;
+    padding-top: 1rem;
+}
+
+.companies_list{
+    width: 100%;
     margin-top: 6rem;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    align-items: center;
 }
